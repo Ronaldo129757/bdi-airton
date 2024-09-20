@@ -1,0 +1,86 @@
+h1 {
+   color: darkblue;
+}
+
+img {
+    height: 100px;
+    width: 100px;  
+    image-rendering: auto;
+
+}
+
+body {
+    background-color: rgb(230, 255, 2);
+    animation-name: example;
+    animation-duration: 9s;
+  }
+  
+  @keyframes example {
+    from {background-color: rgb(255, 115, 0);}
+    to {background-color: rgb 253, 212, 6;}
+  }
+
+  div.galleria {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    border-radius:15px ;
+    transition: width 2s, height 4s;
+  }
+  
+  div.galleria:hover {
+    border: 1px solid #777;
+    width: 300px;
+    height: 300px;
+    transition: width 2s, height 4s;
+  }
+  
+  div.galleria img {
+    width: 100%;
+    height: auto;
+    border-radius:15px ;
+    
+  }
+  
+  div.desc {
+    padding: 20px;
+    text-align: center;
+    transition: width 2s, height 4s;
+  
+}
+
+  #navlist {
+    position: relative;
+  }
+  
+  #navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+  }
+  
+  #navlist li, #navlist a {
+    height: 44px;
+    display: block;
+  }
+  
+  #home {
+    left: 0px;
+    width: 46px;
+    background: url('img_navsprites.gif') 0 0;
+  }
+  
+  #prev {
+    left: 63px;
+    width: 43px;
+    background: url('img_navsprites.gif') -47px 0;
+  }
+  
+  #next {
+    left: 129px;
+    width: 43px;
+    background: url('img_navsprites.gif') -91px 0;
+  }
